@@ -37,8 +37,6 @@
 .contact-form {
   color: var(--primary-green);
   background-color: var(--primary-white);
-  border: 1px solid var(--primary-white);
-  border-radius: 1.5rem;
   padding: 2rem;
   width: 75%;
   max-width: 500px;
