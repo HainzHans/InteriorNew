@@ -1,0 +1,39 @@
+<section id="projects" [style.background-color]="project()?.backgroundColor" [style.color]="project()?.textColor">
+  <div class="container project-content">
+    <div class="flex-between project-header">
+      <div class="project-heading title-text">
+        @if (project()?.isLastProject) {
+          <div>LETZTES</div>
+          <div>PROJEKT</div>
+        }
+      </div>
+      <div class="desktop-hidden">
+        <span>{{project()?.title}}</span>
+      </div>
+      <app-pain-point-component
+        class="mobile-hidden"
+        style="max-width: 50%"
+        [titleColor]="project()?.textColor"
+        [title]="project()?.title"
+      ></app-pain-point-component>
+    </div>
+    <div class="project-image-container">
+        <img class="large-project-image rounded-border" src="{{project()?.bigImage}}" alt="large-project-image" >
+        <div class="small-project-image-container">
+          <img class="small-project-image rounded-border" src="{{project()?.firstSmallImage}}" alt="first-small-project-image" >
+          <img class="small-project-image rounded-border" src="{{project()?.secondSmallImage}}" alt="second-small-project-image" >
+        </div>
+    </div>
+    <div class="flex-between project-footer-container">
+      <span class="project-description">
+        {{project()?.description}}
+      </span>
+      @if(project()?.isButtonVisible) {
+        <app-navigation-button
+          [buttonTitle]="'Alle Projekte'"
+          [navigateTo]="'projects'"
+        ></app-navigation-button>
+      }
+    </div>
+  </div>
+</section>

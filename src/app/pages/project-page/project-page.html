@@ -1,0 +1,12 @@
+<app-header-component></app-header-component>
+<app-hero-section
+  [smallHero]="true"
+  [projectHero]="true"
+></app-hero-section>
+@for ( project of projects; track project) {
+  <app-project-section
+  [project]="project"
+  ></app-project-section>
+}
+<app-contact-section></app-contact-section>
+<app-footer-section></app-footer-section>

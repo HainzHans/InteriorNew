@@ -12,6 +12,8 @@ import {PrimaryButton} from '../../components/primary-button/primary-button';
 export class HeroSection {
 
   smallHero = input<boolean>(false);
+
   aboutHero = input<boolean>(false);
+  projectHero = input<boolean>(false);
 
 }

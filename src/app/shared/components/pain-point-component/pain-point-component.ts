@@ -11,12 +11,12 @@ import {NavigationButton} from '../navigation-button/navigation-button';
 })
 export class PainPointComponent {
 
-  title = input<string>('');
+  title = input<string | undefined>('');
   subTitle = input<string>('');
   text = input<string>('');
   subText = input<string>('');
 
-  titleColor = input<string>('');
+  titleColor = input<string | undefined>('');
   textColor = input<string>('');
 
   buttonTitle = input<string>('');
