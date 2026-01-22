@@ -1,0 +1,124 @@
+/* ===========================
+   FOOTER – MOBILE FIRST
+   =========================== */
+
+.footer-container {
+  background-color: #3e493e;
+  color: var(--primary-white);
+  padding: 3rem 1rem;
+}
+
+/* Grid / Layout */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Spalten */
+.footer-col {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Headings */
+.footer-heading {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footer-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Navigation + Social Links */
+.footer-nav a,
+.footer-social a {
+  color: var(--primary-white);
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.footer-nav a:hover,
+.footer-social a:hover {
+  opacity: 0.6;
+}
+
+/* Linie + Copyright */
+.footer-bottom {
+  border-top: 1px solid rgba(239, 235, 224, 0.3);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Rechtliches */
+.footer-legal {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer-legal a {
+  color: var(--primary-white);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-legal a:hover {
+  opacity: 0.6;
+}
+
+/* ===========================
+   DESKTOP
+   =========================== */
+
+@media (min-width: 900px) {
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  .footer-col {
+    min-width: 30%;
+    text-align: left;
+  }
+
+  .footer-contact {
+    align-items: center;
+  }
+
+  .footer-nav {
+    align-items: center;
+  }
+
+  .footer-social {
+    align-items: center;
+  }
+
+  .footer-heading {
+    justify-content: flex-start;
+  }
+
+  .footer-social .footer-heading {
+    justify-content: flex-end;
+  }
+}

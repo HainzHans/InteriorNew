@@ -1,0 +1,20 @@
+<section class="pain-points-section">
+  <div class="container pain-points-content">
+    <div class="pain-points-wrapper">
+
+      <div class="pain-points-quote">
+        {{title()}}
+        <div class="pain-points-smalltext"></div>
+      </div>
+
+      <div class="pain-points-list">
+        @for ( point of points(); track point; let index = $index) {
+          <app-pain-point-component
+            [title]="points()[index].title"
+            [text]="points()[index].text">
+          </app-pain-point-component>
+        }
+      </div>
+    </div>
+  </div>
+</section>

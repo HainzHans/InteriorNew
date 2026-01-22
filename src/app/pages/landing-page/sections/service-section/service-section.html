@@ -1,0 +1,33 @@
+<section class="service-section">
+  <div class="container service-content">
+
+    <!-- Linke Seite: Bild (aus About-Me) -->
+    <div class="service-image">
+      <img  src="/assets/images/profil/profil2.jpg" alt="Service Bild">
+    </div>
+
+    <!-- Rechte Seite: Pain Points (aus pain-points-section) -->
+    <div class="service-points">
+
+      <div class="service-title-wrapper">
+        <p class="service-title">{{title()}}</p>
+      </div>
+
+      <div class="service-points-list">
+        @for ( point of servicePoints(); track point; let index = $index) {
+          <app-pain-point-component
+            [title]="point.title"
+            [subTitle]="point.subTitle"
+            [text]="point.text"
+            [subText]="point.subText"
+            [mobileStarVisible]="false"
+            [textColor]="textColor">
+          </app-pain-point-component>
+        }
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

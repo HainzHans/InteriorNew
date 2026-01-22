@@ -1,0 +1,33 @@
+<section class="project-container">
+  <div class="container project-content">
+    <div class="flex-between project-header">
+      <div class="project-heading">
+        MEIN LETZTES <br>PROJEKT
+      </div>
+      <div class="desktop-hidden">
+        <span>SCHLAFZIMMER FÜR BERGLER</span>
+      </div>
+      <app-pain-point-component
+        class="mobile-hidden"
+        style="max-width: 50%"
+        [titleColor]="titleColor"
+        [title]="title"
+      ></app-pain-point-component>
+    </div>
+    <div class="project-image-container">
+        <img class="large-project-image" src="/assets/images/project/before_bergler.jpg" alt="Über mich" >
+        <div class="small-project-image-container">
+          <img class="small-project-image" src="/assets/images/project/before_bergler.jpg" alt="Über mich" >
+          <img class="small-project-image" src="/assets/images/project/before_bergler.jpg" alt="Über mich" >
+        </div>
+    </div>
+    <div class="flex-between project-footer-container">
+      <span class="project-description">
+        Hier wollte ein Ehepaar nach 30 Jahren endlich ein neues Schlafzimmer. Natürlich und gemütlich waren die Hauptwünscheund außerdem sollte der alte, selbst restaurierte Bauernschrank bleiben. Mit viel Holz natürlichen Grüntönen und einer Fototapetemit einem selbst geknipsten Bergpanorama als Motiv, zieht eine entspannte Gemütlichkeit in den Raum ein.
+      </span>
+      <app-navigation-button
+        [buttonTitle]="'Alle Projekte'"
+      ></app-navigation-button>
+    </div>
+  </div>
+</section>

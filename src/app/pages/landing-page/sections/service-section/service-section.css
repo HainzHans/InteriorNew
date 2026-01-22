@@ -1,0 +1,105 @@
+/* ===========================
+   SERVICE SECTION – MOBILE FIRST
+   =========================== */
+
+.service-section {
+  background-color: var(--primary-white);
+  color: var(--primary-green);
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+}
+
+/* Bild – wie About-Me */
+.service-image img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Rechte Seite: Pain Points */
+.service-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+/* Titel + Linie */
+.service-title-wrapper {
+  position: relative;
+}
+
+.service-title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.service-title-line {
+  display: none;
+}
+
+/* Pain Points Liste */
+.service-points-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+
+/* ===========================
+   DESKTOP / TABLET
+   =========================== */
+
+@media (min-width: 900px) {
+
+  .service-content {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6rem;
+    gap: 4rem;
+  }
+
+  /* Beide Seiten gleich breit */
+  .service-image,
+  .service-points {
+    flex: 1;
+  }
+
+  /* Bild füllt die ganze linke Spalte */
+  .service-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .service-points {
+    text-align: left;
+  }
+
+  /* Linie unten links wie in pain-points */
+  .service-title-line {
+    display: block;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    border: 0.5rem solid var(--primary-brown);
+    width: 10rem;
+  }
+
+}

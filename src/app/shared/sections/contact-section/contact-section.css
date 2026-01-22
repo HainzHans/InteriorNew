@@ -1,0 +1,137 @@
+/* ===========================
+   CONTACT – MOBILE FIRST
+   =========================== */
+
+.contact-container {
+  background-color: var(--primary-green);
+  color: var(--primary-white);
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 1rem;
+  align-items: center;
+}
+
+/* Textbereich */
+.contact-text {
+  text-align: center;
+  max-width: 600px;
+}
+
+.contact-title {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: bold;
+  margin: 0;
+}
+
+.contact-subtitle {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  line-height: 1.6;
+}
+
+/* Formular */
+.contact-form {
+  color: var(--primary-green);
+  background-color: var(--primary-white);
+  border: 1px solid var(--primary-white);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 75%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-field-header {
+  font-weight: bold;
+  align-items: center;
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-field input,
+.contact-field textarea {
+  border: 1px solid var(--primary-green);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: var(--primary-green);
+  font-family: inherit;
+  background-color: var(--primary-white);
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: none;
+  border-color: var(--primary-brown);
+  box-shadow: 0 0 0 2px rgba(174,128,52,0.3);
+}
+
+/* Button */
+.contact-button {
+  padding: 0.75rem 2rem;
+  border: 2px solid var(--primary-green);
+  background: transparent;
+  color: var(--primary-green);
+  border-radius: 999px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: var(--primary-green);
+  color: var(--primary-white);
+}
+
+/* Feedback */
+.contact-success {
+  color: var(--primary-brown);
+  margin-top: -0.5rem;
+}
+
+.contact-error {
+  color: red;
+  margin-top: -0.5rem;
+}
+
+.contact-smalltext {
+  display: none;
+}
+
+
+/* ===========================
+   DESKTOP
+   =========================== */
+
+@media (min-width: 900px) {
+  .contact-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 6rem ;
+  }
+
+  .contact-text {
+    flex: 1;
+    text-align: left;
+  }
+
+  .contact-form {
+    flex: 1;
+  }
+
+  .contact-form {
+    margin-left: auto;
+  }
+
+}

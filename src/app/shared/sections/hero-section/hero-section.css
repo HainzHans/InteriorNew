@@ -1,0 +1,76 @@
+/* ===========================
+   HERO SECTION
+   =========================== */
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/assets/images/landingpage/landing_page_hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block; /* oder einfach entfernen */
+}
+
+
+/* Overlay optional (für bessere Lesbarkeit) */
+.hero::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: rgba(0,0,0,0.25); /* leicht abdunkeln */
+  z-index: 1;
+}
+
+.hero-content {
+  height: 100vh;
+  justify-content: flex-start; /* content ist links */
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title-group {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 2rem;
+  gap: 2rem
+  /*background-color: var(--primary-white-transparent);
+  display: flex;*/
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 3vw, 1rem);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  /*
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  */
+}
+
+.letter-spacing {
+  letter-spacing: 0.5rem;
+}
+
+.extra-bold {
+  font-weight: bold;
+  font-size: clamp(1.5rem, 5vw, 10rem);
+}
+
+@media (min-width: 700px) { /* 700px */
+  .hero {
+    background-position: center center;
+  }
+
+
+}
+
+@media (min-width: 1200px) { /* 1200px */
+
+}

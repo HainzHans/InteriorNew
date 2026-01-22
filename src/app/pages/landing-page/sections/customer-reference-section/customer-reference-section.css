@@ -1,0 +1,23 @@
+.customer-container {
+  background-color: #3e493e;
+  color: var(--primary-white);
+}
+
+.customer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  max-width: 60%;
+  padding: 6rem 0;
+}
+
+.customer-title {
+  font-size: clamp(1.25rem, 5vw, 3.5rem);
+  font-weight: bold;
+}
+
+.customer-text {
+  padding-bottom: 1.5rem;
+}
