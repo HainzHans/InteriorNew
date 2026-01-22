@@ -26,7 +26,7 @@ html, body {
 /* Abel */
 @font-face {
   font-family: 'Abel';
-  src: url('/assets/fonts/Abel-Regular.ttf') format('woff2');
+  src: url('assets/fonts/Abel-Regular.ttf') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -35,7 +35,7 @@ html, body {
 /* Great Vibes */
 @font-face {
   font-family: 'Great Vibes';
-  src: url('/assets/fonts/GreatVibes-Regular.ttf') format('woff2');
+  src: url('assets/fonts/GreatVibes-Regular.ttf') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

@@ -33,9 +33,8 @@
 .hero-title-group {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  border-radius: 2rem;
-  gap: 2rem
+  padding: 1rem 0;
+  gap: 1rem
   /*background-color: var(--primary-white-transparent);
   display: flex;*/
 }
@@ -45,7 +44,7 @@
 }
 
 .hero-title {
-  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-size: clamp(1.5rem, 5vw, 3.25rem);
   /*
   display: flex;
   flex-direction: column;
@@ -68,6 +67,9 @@
     background-position: center center;
   }
 
+  .hero-title-group {
+    gap: 2rem
+  }
 
 }
 

@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
-import {PainPointComponent} from "../../components/pain-point-component/pain-point-component";
 
 @Component({
   selector: 'app-contact-section',
-    imports: [
-        PainPointComponent
-    ],
+    imports: [],
   templateUrl: './contact-section.html',
   styleUrl: './contact-section.css',
 })

@@ -7,7 +7,6 @@ import {NavigationButton} from '../../../../shared/components/navigation-button/
   selector: 'app-service-section',
   imports: [
     PainPointComponent,
-    NavigationButton
   ],
   templateUrl: './service-section.html',
   styleUrl: './service-section.css',

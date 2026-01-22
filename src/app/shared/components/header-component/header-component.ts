@@ -6,7 +6,6 @@ import {MatIcon} from '@angular/material/icon';
   selector: 'app-header-component',
   imports: [
     PrimaryButton,
-    MatIcon
   ],
   templateUrl: './header-component.html',
   styleUrl: './header-component.css',
