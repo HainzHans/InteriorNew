@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding-bottom: 1rem;
   font-size: clamp(1.25rem, 5vw, 3.5rem);
   font-weight: bold;
   color: var(--primary-brown);
@@ -33,10 +34,12 @@
 
 .large-project-image {
   width: 100%;
+  object-fit: cover;
 }
 
 .small-project-image {
   width: 49%;
+  object-fit: cover;
 }
 
 .small-project-image-container {
@@ -63,6 +66,7 @@
 
   .project-heading {
     gap: 2rem;
+    padding-bottom: 0;
   }
 
   .project-image-container {
@@ -71,6 +75,7 @@
 
   .small-project-image-container {
     flex-direction: column;
+    gap: 0.5rem;
   }
 
   .project-description {

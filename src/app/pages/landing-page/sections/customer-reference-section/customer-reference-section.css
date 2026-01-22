@@ -1,5 +1,5 @@
 .customer-container {
-  background-color: #3e493e;
+  background-color: var(--secondary-green);
   color: var(--primary-white);
 }
 
