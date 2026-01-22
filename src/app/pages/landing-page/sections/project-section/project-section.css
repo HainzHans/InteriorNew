@@ -19,11 +19,9 @@
 .project-heading {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding-bottom: 1rem;
-  font-size: clamp(1.25rem, 5vw, 3.5rem);
   font-weight: bold;
-  color: var(--primary-brown);
+  color: var(--primary-white);
+  padding-top: 1rem;
 }
 
 .project-image-container {

@@ -1,4 +1,5 @@
 import {Component, input} from '@angular/core';
+import {NavigateToPageService} from '../../services/navigate-to-page-service';
 
 @Component({
   selector: 'app-navigation-button',
@@ -9,5 +10,12 @@ import {Component, input} from '@angular/core';
 export class NavigationButton {
 
   buttonTitle = input<string>('');
+  navigateTo = input<string>('');
+
+  constructor(private navigateToPageService: NavigateToPageService) {}
+
+  navigateToPage(page: string) {
+    this.navigateToPageService.navigateToPage(page);
+  }
 
 }

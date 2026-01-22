@@ -4,7 +4,7 @@
 
 .hero {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url('/assets/images/landingpage/landing_page_hero.jpg');
   background-size: cover;
   background-position: center;
@@ -12,6 +12,12 @@
   position: relative;
   display: block; /* oder einfach entfernen */
 }
+
+.hero.small {
+  height: 70vh;
+}
+
+
 
 
 /* Overlay optional (für bessere Lesbarkeit) */
@@ -28,6 +34,9 @@
   justify-content: flex-start; /* content ist links */
   position: relative;
   z-index: 2;
+}
+.hero-content.small {
+  height: 70vh;
 }
 
 .hero-title-group {

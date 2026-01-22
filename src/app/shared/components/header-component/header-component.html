@@ -8,15 +8,26 @@
 
     <nav class="main-nav">
       <ul class="flex">
-        <li><a href="#ueber-mich">Über mich</a></li>
-        <li><a href="#projekte">Projekte</a></li>
-        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a (click)="scrollToSection('about')">Über mich</a></li>
+        <li><a (click)="scrollToSection('projects')">Projekte</a></li>
+        <li><a (click)="scrollToSection('services')">Leistungen</a></li>
       </ul>
 
       <app-primary-button></app-primary-button>
     </nav>
 
-    <button class="menu-toggle">☰</button>
-
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <img src="assets/icons/menu.svg" class="w-6 h-6"  alt="call"/>
+    </button>
   </div>
+
+  @if (isMenuOpen) {
+    <nav class="mobile-nav">
+      <a (click)="scrollToSection('about')">Über mich</a>
+      <a (click)="scrollToSection('projects')">Projekte</a>
+      <a (click)="scrollToSection('service')">Leistungen</a>
+    </nav>
+  }
+
+
 </header>

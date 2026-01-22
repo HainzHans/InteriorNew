@@ -1,17 +1,28 @@
-<section class="hero">
-  <div class="container flex hero-content">
+<section class="hero" [class.small]="smallHero()">
+  <div class="container flex hero-content" [class.small]="smallHero()">
     <div class="hero-title-group">
       <div>
-        <span class="primary-white hero-subtitle">schaffe deinen "Raum fürs echte Leben" - ohne dafür dein Konto leer räumen zu müssen</span>
+        @if (!smallHero()) {
+          <span class="primary-white hero-subtitle">schaffe deinen "Raum fürs echte Leben" - ohne dafür dein Konto leer räumen zu müssen</span>
+        }
       </div>
       <div class="hero-title primary-white hero-title-group">
-        <div>DEIN WEG ZU EINEM <strong>ZUHAUSE</strong></div>
-        <div>SO <strong>INDIVIDUELL</strong></div>
-        <div>WIE <strong>DU</strong></div>
+        @if (aboutHero()) {
+          <div><strong>NEUGIERIG, </strong>WER HINTER</div>
+          <div><strong>"RAUM FÜRS ECHTE LEBEN"</strong></div>
+          <div>STECKT?</div>
+        }@else {
+          <div>DEIN WEG ZU EINEM <strong>ZUHAUSE</strong></div>
+          <div>SO <strong>INDIVIDUELL</strong></div>
+          <div>WIE <strong>DU</strong></div>
+        }
+
       </div>
-      <div class="flex-between">
-        <app-primary-button></app-primary-button>
-      </div>
+      @if (!smallHero()) {
+        <div class="flex-between">
+          <app-primary-button></app-primary-button>
+        </div>
+      }
     </div>
   </div>
 </section>

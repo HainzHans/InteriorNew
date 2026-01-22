@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, input} from '@angular/core';
 import {PrimaryButton} from '../../components/primary-button/primary-button';
 
 @Component({
@@ -10,5 +10,8 @@ import {PrimaryButton} from '../../components/primary-button/primary-button';
   styleUrl: './hero-section.css',
 })
 export class HeroSection {
+
+  smallHero = input<boolean>(false);
+  aboutHero = input<boolean>(false);
 
 }

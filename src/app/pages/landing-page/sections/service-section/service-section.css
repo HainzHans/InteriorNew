@@ -37,7 +37,6 @@
 }
 
 .service-title {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: bold;
   margin: 0;
   display: flex;
