@@ -4,10 +4,9 @@
 }
 
 .pain-points-content {
-  height: 70vh;
   display: flex;
   align-items: center; /* vertikal mittig */
-  padding: 3rem 1rem;
+  padding: 5rem 1rem;
 }
 
 .pain-points-wrapper {
