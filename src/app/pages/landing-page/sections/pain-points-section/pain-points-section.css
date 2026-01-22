@@ -6,7 +6,7 @@
 .pain-points-content {
   display: flex;
   align-items: center; /* vertikal mittig */
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
 }
 
 .pain-points-wrapper {
