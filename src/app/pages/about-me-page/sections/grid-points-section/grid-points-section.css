@@ -1,0 +1,40 @@
+.grid-points-container {
+  background-color: var(--primary-green);
+  color: var(--primary-white);
+}
+
+.grid-points-content {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  align-items: stretch;
+}
+
+.point {
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.grid-points-content {
+  grid-template-columns: 1fr;
+}
+
+app-box-component {
+  display: block;
+  height: 100%;
+}
+
+
+@media (min-width: 600px){
+  .grid-points-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 900px) {
+  .grid-points-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

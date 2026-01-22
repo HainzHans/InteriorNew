@@ -1,0 +1,26 @@
+.text-container {
+  background-color: var(--primary-green);
+  color: var(--primary-white);
+}
+
+/* Layout mobile: untereinander */
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* kurzer Text – größer, prägnanter */
+.text-short {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  line-height: 1.2;
+}
+
+/* längerer Text – normaler Fließtext */
+.text-long {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  line-height: 1.2;
+  opacity: 0.9;
+}

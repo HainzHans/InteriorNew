@@ -1,0 +1,11 @@
+<section class="grid-points-container">
+  <div class="container grid-points-content">
+    @for ( point of gridPoints; track point) {
+      <app-box-component
+        [icon]="point.icon"
+        [title]="point.title"
+        [text]="point.text"
+      />
+    }
+  </div>
+</section>
