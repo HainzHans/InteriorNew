@@ -6,7 +6,7 @@
 
 .services-grid {
   display: grid;
-  gap: 2rem;
+  gap: 5rem;
   padding: 3rem 1rem;
   grid-template-columns: 1fr; /* mobile first */
 }
