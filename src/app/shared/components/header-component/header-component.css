@@ -46,6 +46,10 @@
   display: none;
 }
 
+.hover:hover {
+  cursor: pointer;
+}
+
 /* Navigation – Mobile: ausgeblendet */
 .main-nav {
   display: none;

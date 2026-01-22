@@ -1,0 +1,63 @@
+<section class="services-container">
+  <div class="container services-grid">
+
+    <!-- Service Card 1 -->
+    <div class="service-card">
+
+      <h3 class="service-title">{{quickFixTitle}}</h3>
+      <p class="service-subtitle">{{quickFixSubTitle}}</p>
+
+      <div class="accordion">
+
+        @for (point of quickFixPoints; track point) {
+          <div class="accordion-item" (click)="toggleQuickFix(point.id)">
+            <div class="accordion-header">
+              <span>{{ point.title }}</span>
+              <img
+                src="assets/icons/keyboard_arrow_down.svg"
+                class="accordion-arrow"
+                [class.open]="openQuickFixItem === point.id"
+                alt="arrow"
+              />
+            </div>
+            <div class="accordion-content" [class.open]="openQuickFixItem === point.id">
+              <p>{{ point.text }}</p>
+            </div>
+          </div>
+
+        }
+
+
+      </div>
+    </div>
+
+    <!-- Service Card 2 -->
+    <div class="service-card">
+
+      <h3 class="service-title">{{makeOverTitle}}</h3>
+      <p class="service-subtitle">{{makeOverSubTitle}}</p>
+
+      <div class="accordion">
+
+        @for (point of makeOverPoints; track point) {
+          <div class="accordion-item" (click)="toggleMakeOver(point.id)">
+            <div class="accordion-header">
+              <span>{{ point.title }}</span>
+              <img
+                src="assets/icons/keyboard_arrow_down.svg"
+                class="accordion-arrow"
+                [class.open]="openMakeOverItem === point.id"
+                alt="arrow"
+              />
+            </div>
+            <div class="accordion-content" [class.open]="openMakeOverItem === point.id">
+              <p>{{ point.text }}</p>
+            </div>
+          </div>
+        }
+
+      </div>
+    </div>
+
+  </div>
+</section>

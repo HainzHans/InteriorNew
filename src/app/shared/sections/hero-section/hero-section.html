@@ -1,4 +1,4 @@
-<section class="hero" [class.small]="smallHero()">
+<section class="hero" [class.small]="smallHero()" id="home">
   <div class="container flex hero-content" [class.small]="smallHero()">
     <div class="hero-title-group">
       <div>
@@ -15,6 +15,10 @@
           <div><strong>PROJEKTE.</strong></div>
           <div>LASS DICH INSPIRIEREN &</div>
           <div>ENTDECKE WAS MÖGLICH IST</div>
+        } @else if (serviceHero()) {
+          <div><strong>LEISTUNGEN.</strong></div>
+          <div>SO ARBEITEN WIR ZUSAMMEN, AN DEINEM</div>
+          <div>"RAUM FÜRS ECHTE LEBEN"</div>
         }@else {
           <div>DEIN WEG ZU EINEM <strong>ZUHAUSE</strong></div>
           <div>SO <strong>INDIVIDUELL</strong></div>

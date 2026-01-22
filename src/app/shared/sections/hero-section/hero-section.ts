@@ -15,5 +15,6 @@ export class HeroSection {
 
   aboutHero = input<boolean>(false);
   projectHero = input<boolean>(false);
+  serviceHero = input<boolean>(false);
 
 }
