@@ -7,7 +7,6 @@
 
 .primary-button:hover {
   border: 0.25rem solid var(--primary-brown);
-  color: var(--primary-white);
-  background-color: transparent;
+  background-color: var(--primary-brown-transparent);
   cursor: pointer;
 }

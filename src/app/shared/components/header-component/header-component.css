@@ -80,6 +80,7 @@
   .main-nav a {
     text-decoration: none;
     color: var(--secondary-green);
+    font-weight: bold;
   }
 
   .menu-toggle {

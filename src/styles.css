@@ -1,6 +1,7 @@
 :root {
   /* Colors */
   --primary-brown: #ae8034;
+  --primary-brown-transparent: rgba(174, 128, 52, 0.50);
   --primary-green: #605f4b;
   --secondary-green: #3e493e;
   --primary-white: #efebe0;
