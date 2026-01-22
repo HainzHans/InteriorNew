@@ -71,6 +71,7 @@
     align-items: center;
     padding: 6rem;
     gap: 3rem;
+    line-height: 1.6;
   }
 
   /* Beide Seiten gleich breit */

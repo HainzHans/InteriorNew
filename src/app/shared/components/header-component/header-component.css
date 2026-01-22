@@ -8,8 +8,10 @@
   width: 100%;
   z-index: 10;
   padding: 1.25rem 0; /* 20px */
-  background-color: var(--secondary-green);
+  background-color: var(--primary-white-transparent);
 }
+
+
 
 /* Logo */
 .logo img {
@@ -77,8 +79,7 @@
 
   .main-nav a {
     text-decoration: none;
-    color: var( --primary-white);
-    font-weight: 500;
+    color: var(--secondary-green);
   }
 
   .menu-toggle {
