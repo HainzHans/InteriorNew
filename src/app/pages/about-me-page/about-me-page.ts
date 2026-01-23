@@ -25,6 +25,8 @@ import {FooterSection} from '../../shared/sections/footer-section/footer-section
 })
 export class AboutMePage {
 
+  heroImage = 'assets/images/heros/about_hero.jpg';
+
   aboutSubTitle = 'ich bin Verena.'
   aboutSubText = 'deine Einrichtungsexpertin aus dem bayrischen Oberland. ' +
     'Mit viel Leidenschaft und Gespür für Menschen und Räumne, verhelfe ich dir zu deinem ganz persönlichen "Raum fürs echte Leben". ' +

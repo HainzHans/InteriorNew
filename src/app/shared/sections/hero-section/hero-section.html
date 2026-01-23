@@ -1,4 +1,4 @@
-<section class="hero" [class.small]="smallHero()" id="home">
+<section class="hero" [class.small]="smallHero()" [ngStyle]="{'background-image': 'url(' + heroImage() + ')'}" id="home">
   <div class="container flex hero-content" [class.small]="smallHero()">
     <div class="hero-title-group">
       <div>

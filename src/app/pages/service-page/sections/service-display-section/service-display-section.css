@@ -13,6 +13,7 @@
 
 /* Cards */
 .service-card {
+  position: relative;
   background: var(--primary-green);
   color: var(--primary-white);
   padding: 2rem;
@@ -88,8 +89,10 @@
 
 /* Desktop: 2 Spalten */
 @media (min-width: 800px) {
+
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
+    padding: 6rem;
   }
 
   .service-card {

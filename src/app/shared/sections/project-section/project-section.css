@@ -54,7 +54,14 @@
   flex-direction: column;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
+  .project-content {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .project-header {
     display: flex;
     flex-direction: row;

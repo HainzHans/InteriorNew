@@ -15,6 +15,7 @@ export class ServiceSection {
 
   title = input<string>('');
   servicePoints = input<ServicePoint[]>([]);
+
   textColor = '#605f4b';
 
 }

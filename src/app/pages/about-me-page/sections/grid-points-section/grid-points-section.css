@@ -32,6 +32,11 @@ app-box-component {
   }
 }
 
+@media (min-width: 800px) {
+  .grid-points-content {
+    padding: 6rem;
+  }
+}
 
 @media (min-width: 900px) {
   .grid-points-content {

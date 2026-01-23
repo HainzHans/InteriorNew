@@ -30,8 +30,9 @@ import {Project} from '../project-page/models/project.model';
 })
 export class LandingPage {
 
-  painPointsTitle = '"DINGE DIE DU WIRKLICH LIEBST. KOMMEN NIEMALS AUS DER MODE!"';
+  heroImage = 'assets/images/heros/landing_hero.jpg';
 
+  painPointsTitle = '"DINGE DIE DU WIRKLICH LIEBST. KOMMEN NIEMALS AUS DER MODE!"';
   painPoints: PainPoint[] = [
     {
       title: 'Es wirkt zusammengewürfelt?',
@@ -51,7 +52,6 @@ export class LandingPage {
   ]
 
   serviceTitle = 'LEISTUNGEN';
-
   servicePoints: ServicePoint[] = [
     {
       title: 'DER "QUICK FIX"',

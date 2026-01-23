@@ -20,6 +20,8 @@ import {FooterSection} from '../../shared/sections/footer-section/footer-section
 })
 export class ProjectPage {
 
+  heroImage = 'assets/images/heros/project_hero.jpg';
+
   projects: Project[] = [
     {
       title: 'SCHLAFZIMMER FÜR BERGLER',

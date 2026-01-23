@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import {MatIcon} from '@angular/material/icon';
+import {AbsoluteStarComponent} from '../../../../shared/components/absolute-star-component/absolute-star-component';
 
 @Component({
   selector: 'app-service-display-section',
   imports: [
-    MatIcon
+    MatIcon,
+    AbsoluteStarComponent
   ],
   templateUrl: './service-display-section.html',
   styleUrl: './service-display-section.css',
@@ -56,27 +58,34 @@ export class ServiceDisplaySection {
 
   makeOverPoints: ServicePoint[] = [
     {
-      id: 4,
+      id: 1,
       title: 'ÜBERMITTLUNG VON FOTOS',
       text: 'Du füllst den bereitgestellten Fragebogen aus und schickst mir diesen zusammen mit Fotos von deinem "Problemraum" zu.\n' +
         'Auf dieser Basis mache ich mir bereits ein paar Gedanken, bevor wir uns zu einem Zoom-Call verabreden und alles "vor Ort" besprechen.'
     },
     {
-      id: 5,
+      id: 2,
       title: 'EXPERTEN GESPRÄCH',
       text: 'Wir verabreden uns zu einem Zoom-Call (ca 1,5 Stunden).\n' +
         'Jetzt haben wir Zeit, um die Punkte aus deinem Fragebogen sowie die ersten Ideen meinerseits ausführlich zu besprechen.\n' +
         'Zusammen legen wir fest, welche Änderungen möglich und sinnvoll sind.'
     },
     {
-      id: 6,
+      id: 3,
       title: 'MOODBOARD',
       text: 'Du erhältst einen ersten Eindruck.\n' +
         'Auf Basis deiner Angaben erstelle ich ein Moodboard inklusive Farbkonzept. So bekommst du ein Gefühl dafür, wie sich der Raum zusammenfügen wird.\n' +
         'Dies besprechen wir in einem weiteren Zoom-Call'
     },
     {
-      id: 7,
+      id: 4,
+      title: 'OPTIMIERUNGEN',
+      text: 'Wir verabreden uns zu einem weitern Zoom-Call (ca. 1,5 Stunden).\n' +
+        'Wir besprechen das Moodboard und klären Fragen. Hier hast du auch die Möglichkeit Änderungswünsche zu kommunizieren.\n' +
+        'Wir legen das Moodboard final fest.'
+    },
+    {
+      id: 5,
       title: 'ENDERGEBNIS',
       text: 'Erarbeitung und Bereitstellung des ganzheitlichen Einrichtungskonzepts inkl. Leitfaden zur Umsetzung.\n' +
         'Aufgrund des überarbeiteten Moodboards erstelle ich das Konzept für deinen persönlichen "Raum fürs echte Leben".\n' +

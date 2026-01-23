@@ -14,7 +14,7 @@
       </div>
 
       <div class="service-points-list">
-        @for ( point of servicePoints(); track point; let index = $index) {
+        @for ( point of servicePoints(); track point) {
           <app-pain-point-component
             [title]="point.title"
             [subTitle]="point.subTitle"

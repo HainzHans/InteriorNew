@@ -3,6 +3,7 @@
 
     <!-- Service Card 1 -->
     <div class="service-card">
+      <app-absolute-star-component></app-absolute-star-component>
 
       <h3 class="service-title">{{quickFixTitle}}</h3>
       <p class="service-subtitle">{{quickFixSubTitle}}</p>
@@ -12,6 +13,7 @@
         @for (point of quickFixPoints; track point) {
           <div class="accordion-item" (click)="toggleQuickFix(point.id)">
             <div class="accordion-header">
+              <span>Schritt {{ point.id }}</span>
               <span>{{ point.title }}</span>
               <img
                 src="assets/icons/keyboard_arrow_down.svg"
@@ -33,6 +35,7 @@
 
     <!-- Service Card 2 -->
     <div class="service-card">
+      <app-absolute-star-component></app-absolute-star-component>
 
       <h3 class="service-title">{{makeOverTitle}}</h3>
       <p class="service-subtitle">{{makeOverSubTitle}}</p>
@@ -42,6 +45,7 @@
         @for (point of makeOverPoints; track point) {
           <div class="accordion-item" (click)="toggleMakeOver(point.id)">
             <div class="accordion-header">
+              <span>Schritt {{ point.id }}</span>
               <span>{{ point.title }}</span>
               <img
                 src="assets/icons/keyboard_arrow_down.svg"

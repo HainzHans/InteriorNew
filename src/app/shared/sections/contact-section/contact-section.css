@@ -34,6 +34,7 @@
 
 /* Formular */
 .contact-form {
+  position: relative;
   color: var(--primary-green);
   background-color: var(--primary-white);
   padding: 2rem;
@@ -125,10 +126,9 @@
 
   .contact-form {
     flex: 1;
-  }
-
-  .contact-form {
     margin-left: auto;
   }
+
+
 
 }

@@ -17,7 +17,7 @@ export class PainPointComponent {
   subText = input<string>('');
 
   titleColor = input<string | undefined>('');
-  textColor = input<string>('');
+  textColor = input<string | undefined>('');
 
   buttonTitle = input<string>('');
 

@@ -19,4 +19,6 @@ import {FooterSection} from '../../shared/sections/footer-section/footer-section
 })
 export class ServicePage {
 
+  heroImage = 'assets/images/heros/project_hero.jpg';
+
 }

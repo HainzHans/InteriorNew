@@ -5,7 +5,7 @@
 
     @if (subTitle() !== '') {
       <div class="pain-point-text-sub">
-        <h3 class="pain-point-title" [style.color]="titleColor()">{{title()}}</h3>
+        <h3 class="pain-point-title" [style.color]="textColor()">{{title()}}</h3>
         <h1 class="pain-point-description" [style.color]="textColor()">{{subTitle()}}</h1>
         <p class="pain-point-description" [style.color]="textColor()">{{text()}}</p>
         <h1 class="pain-point-description" [style.color]="textColor()">{{subText()}}</h1>
@@ -20,7 +20,7 @@
       </div>
     } @else {
       <div class="pain-point-text">
-        <h3 class="pain-point-title" [style.color]="titleColor()">{{title()}}</h3>
+        <h3 class="pain-point-title" [style.color]="textColor()">{{title()}}</h3>
         <p class="pain-point-description" [style.color]="textColor()">{{text()}}</p>
       </div>
     }

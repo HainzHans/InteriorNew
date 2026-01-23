@@ -45,6 +45,12 @@
 }
 
 @media (min-width: 900px) {
+  .pain-points-content {
+    display: flex;
+    align-items: center; /* vertikal mittig */
+    padding: 6rem;
+  }
+
   .pain-points-quote {
     flex: 1;
     text-align: left;
