@@ -10,6 +10,7 @@
       <div class="pain-points-list">
         @for ( point of points(); track point; let index = $index) {
           <app-pain-point-component
+            [backgroundVisible]="true"
             [title]="points()[index].title"
             [text]="points()[index].text">
           </app-pain-point-component>

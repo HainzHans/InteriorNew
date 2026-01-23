@@ -22,4 +22,5 @@ export class PainPointComponent {
   buttonTitle = input<string>('');
 
   mobileStarVisible = input<boolean>(true);
+  backgroundVisible = input<boolean>(false);
 }

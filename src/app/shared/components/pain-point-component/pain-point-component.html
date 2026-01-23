@@ -1,6 +1,6 @@
 <div class="pain-points-list">
 
-  <div class="pain-point-component ">
+  <div class="pain-point-component" [class.with-background]="backgroundVisible()">
     <img [class.only-mobile]="!mobileStarVisible()" src="assets/images/stars/large-star.png" alt="">
 
     @if (subTitle() !== '') {
